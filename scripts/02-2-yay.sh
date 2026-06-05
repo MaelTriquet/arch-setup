@@ -1,21 +1,24 @@
 #!/bin/bash
+# scripts/02-2-yay.sh
 set -e
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_DIR="$(dirname "$SCRIPT_DIR")"
-YAY_DIR="$REPO_DIR/packages/yay"
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PACKAGES_DIR="$REPO_DIR/packages/yay"
 
-if [ -d "$YAY_DIR" ]; then
-    YAY_PACKAGES=$(cat "$YAY_DIR"/packages_*.txt 2>/dev/null | grep -v '^\s*#' | grep -v '^\s*$' | tr '\n' ' ')
-    if [ -n "$YAY_PACKAGES" ]; then
-        echo "  Installing AUR packages..."
-        # shellcheck disable=SC2086
-        yay -S --needed --noconfirm --sudoloop $YAY_PACKAGES || true
-    else
-        echo "  No AUR packages found, skipping."
-    fi
-else
-    echo "  Yay directory not found, skipping."
+echo "==> Installing AUR packages..."
+
+if [ ! -d "$PACKAGES_DIR" ]; then
+    echo "  No AUR packages directory found at $PACKAGES_DIR, skipping."
+    exit 0
 fi
 
-echo "  Yay packages done."
+PACKAGES=$(cat "$PACKAGES_DIR"/*.txt | grep -v '^\s*#' | grep -v '^\s*$' | tr '\n' ' ')
+
+if [ -z "$PACKAGES" ]; then
+    echo "  No packages found, skipping."
+    exit 0
+fi
+
+yay -S --needed --noconfirm $PACKAGES || true
+
+echo "  AUR packages installed successfully."
