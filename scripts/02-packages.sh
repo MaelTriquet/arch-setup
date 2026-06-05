@@ -20,7 +20,7 @@ if [ -d "$PACMAN_DIR" ]; then
         sudo pacman -Sy --noconfirm
         echo "  Installing pacman packages..."
         # shellcheck disable=SC2086
-        sudo pacman -S --needed --noconfirm $PACMAN_PACKAGES
+        sudo pacman -S --needed --noconfirm $PACMAN_PACKAGES || true
     else
         echo "  No pacman packages found, skipping."
     fi
@@ -34,7 +34,7 @@ if [ -d "$YAY_DIR" ]; then
     if [ -n "$YAY_PACKAGES" ]; then
         echo "  Installing AUR packages..."
         # shellcheck disable=SC2086
-        yay -S --needed --noconfirm --sudoloop $YAY_PACKAGES
+        yay -S --needed --noconfirm --sudoloop $YAY_PACKAGES || true
     else
         echo "  No AUR packages found, skipping."
     fi
