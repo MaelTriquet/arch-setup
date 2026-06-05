@@ -12,13 +12,17 @@ if [ ! -d "$PACKAGES_DIR" ]; then
     exit 0
 fi
 
-PACKAGES=$(cat "$PACKAGES_DIR"/*.txt | grep -v '^\s*#' | grep -v '^\s*$' | tr '\n' ' ')
+for file in "$PACKAGES_DIR"/*.txt; do
+    category=$(basename "$file" .txt | sed 's/packages_//')
+    PACKAGES=$(grep -v '^\s*#' "$file" | grep -v '^\s*$' | tr '\n' ' ')
 
-if [ -z "$PACKAGES" ]; then
-    echo "  No packages found, skipping."
-    exit 0
-fi
+    if [ -z "$PACKAGES" ]; then
+        echo "  [$category] No packages listed, skipping."
+        continue
+    fi
 
-yay -S --needed --noconfirm $PACKAGES || true
+    echo "  [$category] Installing..."
+    yay -S --needed --noconfirm $PACKAGES || true
+done
 
 echo "  AUR packages installed successfully."
