@@ -15,13 +15,19 @@ fi
 install_package() {
     local pkg="$1"
 
-    if yay -S --noconfirm "${pkg}-bin" 2>/dev/null; then
-        echo "    [bin] $pkg"
-    elif yay -S --noconfirm "$pkg" 2>/dev/null; then
-        echo "    [src] $pkg"
-    else
-        echo "    [FAILED] $pkg"
-    fi
+    yay -S --noconfirm "${pkg}-bin" 2>/dev/null
+	BIN_SUCCESS=$(yay -Q | grep -c "${pkg}-bin")
+	if [ $BIN_SUCCESS -eq 0 ]; then
+		echo "    [bin] $pkg"
+	else
+		yay -S --noconfirm "$pkg" 2>/dev/null
+		SRC_SUCCESS=$(yay -Q | grep -c "$pkg")
+		if [ $SRC_SUCCESS -eq 0 ]; then
+			echo "    [src] $pkg"
+		else
+			echo "    [FAILED] $pkg"
+		fi
+	fi
 }
 
 for file in "$PACKAGES_DIR"/*.txt; do
