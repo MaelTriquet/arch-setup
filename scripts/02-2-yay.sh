@@ -15,7 +15,9 @@ fi
 install_package() {
     local pkg="$1"
 
-    if yay -S --noconfirm "$pkg" 2>/dev/null; then
+    if yay -S --noconfirm "${pkg}-bin" 2>/dev/null; then
+        echo "    [bin] $pkg"
+    elif yay -S --noconfirm "$pkg" 2>/dev/null; then
         echo "    [src] $pkg"
     else
         echo "    [FAILED] $pkg"
