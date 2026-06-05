@@ -1,4 +1,3 @@
-brave-bin
 electron41-bin
 electron41-bin-debug
 typora

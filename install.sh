@@ -38,6 +38,7 @@ run_step() {
     log "$1 done."
 }
 
+sudo -v
 # --- Steps ---
 run_step 01-aur
 run_step 02-1-pacman
