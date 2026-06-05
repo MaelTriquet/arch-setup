@@ -1,0 +1,12 @@
+archlinux-keyring
+base
+base-devel
+ca-certificates
+ca-certificates-mozilla
+ca-certificates-utils
+filesystem
+iana-etc
+licenses
+pacman
+pacman-mirrorlist
+tzdata

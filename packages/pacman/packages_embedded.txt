@@ -1,0 +1,11 @@
+arm-none-eabi-binutils
+arm-none-eabi-gcc
+arm-none-eabi-newlib
+avr-binutils
+avrdude
+avr-gcc
+avr-libc
+dfu-programmer
+dfu-util
+dtc
+qmk

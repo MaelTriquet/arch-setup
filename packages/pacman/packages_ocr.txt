@@ -1,0 +1,8 @@
+jbig2dec
+jbigkit
+leptonica
+potrace
+tesseract
+tesseract-data-afr
+tesseract-data-eng
+tesseract-data-osd

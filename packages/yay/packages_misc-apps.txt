@@ -1,0 +1,17 @@
+aether
+aether-debug
+anarchism
+asdcontrol
+cliamp
+cliamp-debug
+dnslookup-bin
+hellwal
+hellwal-debug
+kando-bin
+katana-bin
+linkchecker
+localsend
+smassh
+stockfish
+tobi-try
+tzupdate

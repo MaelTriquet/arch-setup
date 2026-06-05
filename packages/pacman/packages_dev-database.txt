@@ -1,0 +1,10 @@
+ldb
+lmdb
+mariadb-libs
+postgresql
+postgresql-libs
+sqlite
+talloc
+tdb
+tevent
+xapian-core

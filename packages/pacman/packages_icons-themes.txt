@@ -1,0 +1,8 @@
+adwaita-cursors
+adwaita-icon-theme
+adwaita-icon-theme-legacy
+breeze-icons
+default-cursors
+gnome-themes-extra
+hicolor-icon-theme
+sound-theme-freedesktop

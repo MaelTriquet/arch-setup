@@ -1,0 +1,13 @@
+bat
+btop
+dust
+eza
+fastfetch
+fd
+fzf
+jq
+parallel
+ripgrep
+tldr
+yq
+zoxide

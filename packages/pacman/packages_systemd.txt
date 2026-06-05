@@ -1,0 +1,11 @@
+dbus
+dbus-broker
+dbus-broker-units
+dbus-glib
+dbus-units
+efibootmgr
+efivar
+limine
+systemd
+systemd-libs
+systemd-sysvcompat

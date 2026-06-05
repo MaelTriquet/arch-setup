@@ -1,0 +1,13 @@
+base-devel
+debugedit
+expac
+gdb
+gdb-common
+git
+github-cli
+lazydocker
+lazygit
+mise
+neovim
+uv
+valgrind

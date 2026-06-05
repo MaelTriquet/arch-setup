@@ -1,0 +1,13 @@
+dvisvgm
+libsynctex
+texinfo
+texlive-basic
+texlive-bin
+texlive-binextra
+texlive-doc
+texlive-fontsrecommended
+texlive-langfrench
+texlive-latex
+texlive-latexextra
+texlive-latexrecommended
+texlive-pictures

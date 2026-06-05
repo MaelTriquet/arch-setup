@@ -1,0 +1,6 @@
+enchant
+hunspell
+hyphen
+liblangtag
+libnumbertext
+libunibreak

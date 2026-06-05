@@ -1,0 +1,3 @@
+nautilus
+nautilus-python
+yazi

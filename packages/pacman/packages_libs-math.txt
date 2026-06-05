@@ -1,0 +1,10 @@
+blas
+cblas
+eigen
+fftw
+gmp
+hdf5
+lapack
+libaec
+mpdecimal
+mpfr

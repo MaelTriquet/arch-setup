@@ -1,0 +1,8 @@
+cups
+cups-browsed
+cups-filters
+cups-pdf
+libcups
+libcupsfilters
+libppd
+system-config-printer

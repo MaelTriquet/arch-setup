@@ -1,0 +1,8 @@
+hyprpicker
+libei
+libevdev
+libinput
+mtdev
+wev
+wtype
+ydotool

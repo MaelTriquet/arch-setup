@@ -1,0 +1,6 @@
+gpu-screen-recorder
+libgbinder
+libglibutil
+libliftoff
+python-gbinder
+waydroid

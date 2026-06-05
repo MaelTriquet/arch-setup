@@ -1,0 +1,3 @@
+brave-bin
+librewolf-bin
+librewolf-bin-debug

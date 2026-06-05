@@ -1,0 +1,4 @@
+grim
+hyprshot
+satty
+slurp

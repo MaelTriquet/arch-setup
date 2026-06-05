@@ -1,0 +1,13 @@
+krb5
+libdatachannel
+libgit2
+libjuice
+libldap
+libmicrohttpd
+libnet
+libnice
+libpcap
+libsasl
+libsrtp
+libssh
+libssh2

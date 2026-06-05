@@ -1,0 +1,13 @@
+convertlit
+djvulibre
+ebook-tools
+ghostscript
+girara
+libmupdf
+libreoffice-fresh
+poppler
+poppler-data
+poppler-glib
+xournalpp
+zathura
+zathura-pdf-mupdf

@@ -1,0 +1,5 @@
+aerc
+isync
+msmtp
+notmuch
+notmuch-runtime
