@@ -1,6 +1,7 @@
 #!/bin/bash
 # scripts/02-1-pacman.sh
 set -e
+sudo -v
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PACKAGES_DIR="$REPO_DIR/packages/pacman"
