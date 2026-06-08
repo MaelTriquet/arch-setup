@@ -4,8 +4,5 @@ python-datastar-py
 python-readerwriterlock
 python-soundcloud-v2
 python-spotapi
-python-spotipy
-python-spotipyfree
-python-syncedlyrics
 python-terminaltexteffects
 python-tls-client-git

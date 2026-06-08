@@ -1,15 +1,10 @@
 aether
 aether-debug
-anarchism
-asdcontrol
 cliamp
 cliamp-debug
 dnslookup-bin
 hellwal
 hellwal-debug
-katana-bin
-linkchecker
 localsend
 smassh
-tobi-try
 tzupdate
