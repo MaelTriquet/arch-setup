@@ -1,0 +1,12 @@
+alsa-card-profiles
+alsa-lib
+alsa-topology-conf
+alsa-ucm-conf
+pipewire
+pipewire-alsa
+pipewire-audio
+pipewire-jack
+pipewire-pulse
+wireplumber
+libwireplumber
+rtkit

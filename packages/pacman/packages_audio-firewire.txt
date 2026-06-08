@@ -1,0 +1,4 @@
+libavc1394
+libdc1394
+libiec61883
+libraw1394

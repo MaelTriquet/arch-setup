@@ -1,0 +1,16 @@
+chromaprint
+libbs2b
+libcanberra
+libebur128
+libmpdclient
+libpulse
+libsamplerate
+libshout
+libsndfile
+libsoxr
+lilv
+lv2
+openal
+portaudio
+rnnoise
+webrtc-audio-processing-1

@@ -1,0 +1,5 @@
+cdparanoia
+pamixer
+playerctl
+sof-firmware
+zvbi

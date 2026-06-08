@@ -1,0 +1,16 @@
+flac
+gsm
+lame
+libfdk-aac
+liblc3
+libmodplug
+libogg
+libopenmpt
+libvorbis
+mpg123
+opus
+sbc
+speex
+speexdsp
+twolame
+wavpack

@@ -23,7 +23,7 @@ for file in "$PACKAGES_DIR"/*.txt; do
     fi
 
     echo "  [$category] Installing..."
-    timeout 3m yay -S --needed --noconfirm $PACKAGES || true
+    yay -S --needed --noconfirm $PACKAGES || true
 done
 
 echo "  Yay packages installed successfully."

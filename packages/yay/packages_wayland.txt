@@ -1,3 +1,2 @@
 hyprland-preview-share-picker
-walker
-wshowkeys-git
+walker-bin
