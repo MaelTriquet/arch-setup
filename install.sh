@@ -44,9 +44,7 @@ run_step 01-aur
 run_step 02-1-pacman
 run_step 02-2-yay
 run_step 03-check-failed-downloads
-# run_step 03-hyprland     # uncomment as you build these out
-# run_step 04-services
-# run_step 05-apps
+run_step 04-hyprland
 
 # --- Stow dotfiles ---
 if [ -z "$STEP" ] || [ "$STEP" = "stow" ]; then
